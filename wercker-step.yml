@@ -1,11 +1,9 @@
-name: azure-ftp-deploy
-version: 0.0.7
-description: Upload your webapplication to Windows Azure.
+name: ftp-stage-deploy
+version: 0.0.1
+description: Upload your files that are changed
 keywords:
-  - azure
   - ftp
-  - .net
-  - c#
+  - staged
 properties:
   publish-url:
     type: string

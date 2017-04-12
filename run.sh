@@ -14,7 +14,7 @@ echo "Test connection"
 echo "curl -u $FTP_USERNAME:FTP_PASSWORD $FTP_URL/"
 curl -u $FTP_USERNAME:$FTP_PASSWORD $FTP_URL/
 
-echo "$(ls -A $OUTPUT_DIR | wc -l ) files to sent..."
+echo "$(ls -A $OUTPUT_DIR | wc -l ) files to send..."
 
 echo "find $OUTPUT_DIR -type f -exec curl -u $FTP_USERNAME:FTP_PASSWORD --ftp-create-dirs -T {} $FTP_URL/ \;"
 find $OUTPUT_DIR -type f -exec curl -u $FTP_USERNAME:$FTP_PASSWORD --ftp-create-dirs -T {} $FTP_URL/ \;

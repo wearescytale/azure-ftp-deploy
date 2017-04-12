@@ -25,7 +25,7 @@ Add AZURE_PASSWORD as deploy target or application environment variable.
 ```yaml
 build:
   steps:
-    - wercker-labs/azure-ftp-deploy:
+    - scytale/ftp-stage-deploy:
         publish-url: ftp://waws-prod-blu-003.ftp.azurewebsites.windows.net/site/wwwroot
         username: test\\\$test
         password: $AZURE_PASSWORD

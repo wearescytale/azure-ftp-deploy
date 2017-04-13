@@ -1,5 +1,5 @@
 name: ftp-stage-deploy
-version: 0.0.7
+version: 0.0.8
 description: Upload your files that are changed
 keywords:
   - ftp
@@ -12,6 +12,9 @@ properties:
     type: string
     required: true
   password:
+    type: string
+    required: true
+  output-dir:
     type: string
     required: true
 

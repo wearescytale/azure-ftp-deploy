@@ -17,6 +17,7 @@ To use:
 * `publish-url` (required) Full FTP path to upload to. Should start with ftp:// and end with wwwroot.
 * `username` (required) Username to connect to FTP server. _You must escape `\` and `$`, see example._
 * `password` (required) Password to connect to FTP server
+* `output-dir` (required) Folder with the files you want to transfer
 
 # Example
 
@@ -29,6 +30,7 @@ build:
         publish-url: ftp://waws-prod-blu-003.ftp.azurewebsites.windows.net/site/wwwroot
         username: test\\\$test
         password: $AZURE_PASSWORD
+        output-dir: dist
 ```
 
 # License
